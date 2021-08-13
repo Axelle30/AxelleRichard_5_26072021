@@ -1,0 +1,12 @@
+/*Modification des couleurs*/
+
+$custom-colors: (
+    "primaryc": $color-primary,
+    "secondary-c": $color-secondary,
+    "light-c": $color-tertiary,
+    "gradient": $color-gradient,
+);
+
+/*Fusion des tables*/
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
