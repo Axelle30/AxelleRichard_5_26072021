@@ -10,71 +10,74 @@
     <script src="https://kit.fontawesome.com/e4743f0c56.js" crossorigin="anonymous"></script>
     
 
-    <title>Bienvenue sur Orinoco</title>
+    <title>OriTeddies - Nos Produits</title>
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-dark navbar-expand-md bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><i class="fas fa-shopping-basket"></i>&nbsp Orinoco</a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-paw"></i>&nbsp; OriTeddies</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp Acceuil</a>
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp; Acceuil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="construction.html"><i class="fas fa-users"></i>&nbsp Mon Compte</a>
+                    <a class="nav-link" href="construction.html"><i class="fas fa-users"></i>&nbsp; Mon Compte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="basket.html"><i class="fas fa-shopping-basket"></i>&nbsp Panier</a>
+                    <a class="nav-link" href="basket.html"><i class="fas fa-shopping-basket"></i>&nbsp; Panier &nbsp;<span id="basket-item-counter" class="badge bg-danger rounded-pill"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="product.html"><i class="fas fa-shopping-basket"></i>&nbsp Nos Produits</a>
+                    <a class="nav-link active" href="product.html"><i class="fas fa-shopping-basket"></i>&nbsp; Nos Produits</a>
                 </li>
             </ul>
         </div>
     </nav>
     <h1 class="text-center text-secondary">Découvrez nos produits</h1>
     <section id="product-select-section">
-        <h2 class="text-secondary text-center">Catégories</h2>
+        <!--<h2 class="text-secondary text-center">Catégories</h2>
         <select class="form-select" id="product-select-categories">
             <option id="categories-default-choice">Choississez une catégorie</option>
-        </select>
+        </select> -->
         <h2 class="text-secondary text-center">Produit</h2>
         <select class="form-select" id="product-select-product">
             <option id="product-default-choice">Choississez un produit</option>
         </select>
-        <h3 class="text-primary text-center" id="choice-text">Faites votre choix via les menu déroulant ci dessus !</h3>
+        <h3 class="text-primary text-center" id="choice-text">Faites votre choix via le menu déroulant ci dessus !</h3>
     </section>
     <section id="product-details-section">
      <!-- Product Details Section -->
      <div>
-         <img id="product-image"/>
+         <img id="product-image" class="img-fluid container-fluid"/>
      </div>
      <div>
-         <h3 id="product-name"></h3>
-         <p id="product-description"></p>
-         <p><strong id="product-price"></strong></p>
+         <h3 id="product-name" class="text-center"></h3>
+         <p id="product-description" class="text-center"></p>
+         <p><strong id="product-price" class="text-center"></strong></p>
          <label id="product-customize-label" for="product-customize choice"></label>
-         <select id="product-customize-choice">
+         <select id="product-customize-choice" class="container">
              <option id="product-customize-default">Choississez votre option de personnalisation</option>
          </select>
-         <button class="btn btn-primary" id="product-order-button">Choississez d'abord votre produit !</button>
-     </div>
+         <button class="btn btn-primary container-fluid mt-3" id="product-order-button">Choississez d'abord votre produit !</button>
+         <a href="basket.html">
+            <button class="btn btn-primary container-fluid mt-3" id="go-to-checkup-button">Allez au panier &nbsp; <i class="fas fa-arrow-right"></i></button>
+        </a>
+        </div>
     </section>
-    <footer class="bg-dark text-justify">
+    <footer class="bg-secondary text-justify">
         <div class="text-decoration-none">
             <h4>
-                <a href="construction.html"><i class="fas fa-mobile"></i>&nbsp Contact</a>
+                <a href="construction.html"><i class="fas fa-mobile"></i>&nbsp; Contact</a>
             </h4>
             <h4>
-                <a href="construction.html"><i class="far fa-file-alt"></i>&nbsp Conditions générale de vente</a>
+                <a href="construction.html"><i class="far fa-file-alt"></i>&nbsp; Conditions générale de vente</a>
             </h4>
         </div>
         <div>    
             <h4>
-                <a href="construction.html"><i class="fas fa-question"></i>&nbsp A propos</a>
+                <a href="construction.html"><i class="fas fa-question"></i>&nbsp; A propos</a>
             </h4>
             <h4>
-                <a href="construction.html"><i class="fas fa-user-plus"></i>&nbsp Offres d'emploi</a>
+                <a href="construction.html"><i class="fas fa-user-plus"></i>&nbsp; Offres d'emploi</a>
             </h4>
         </div>    
     </footer>

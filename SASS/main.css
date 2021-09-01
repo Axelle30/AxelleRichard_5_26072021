@@ -1,6 +1,6 @@
 /*Variables de couleurs*/
 footer {
-  margin-top: 20%;
+  margin-top: 50% !important;
   font-weight: 15px;
   padding: 15px 0 15px 0;
   display: -webkit-box;
@@ -10,23 +10,13 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer div {
-  text-align: justify;
 }
 
 footer a {
   text-decoration: none;
 }
 
-#index-sectoin {
+#index-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +24,13 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+}
+
+/*.product-card {
+    margin-bottom: 30%;
+}*/
+#product-details-section {
+  margin-bottom: 50%;
 }
 
 /*!
